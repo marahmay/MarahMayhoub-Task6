@@ -1,0 +1,219 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: cursive;
+}
+
+
+/* Navbar */
+
+.navbar {
+    background-color: #f8f9fa1f;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav span {
+    color: #207561;
+    font-size: 26px;
+}
+
+nav .nav-link {
+    color: black;
+}
+
+nav .nav-link:hover {
+    color: #207561;
+}
+
+nav .menu {
+    cursor: pointer;
+    display: none;
+    font-size: 25px;
+}
+
+nav:hover {
+    background-color: white;
+    transition: 0.4s ease-in-out;
+}
+
+
+/* side navbar */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100000 !important;
+    top: 0;
+    right: 0;
+    background-color: white;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* hero */
+
+.hero {
+    background-color: #F8F9FA;
+    height: 100vh;
+    display: flex;
+}
+
+.hero button {
+    background-color: #207561;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    width: 150px;
+}
+
+.hero button:hover {
+    background-color: black;
+    transition: 0.4s;
+}
+
+.hero h1{
+    font-size: 3rem;
+}
+
+.hero p{
+    font-size: 1.3rem;
+}
+
+.hero img{
+    max-width:950px;
+}
+
+
+/* services section */
+
+.services p,
+.aboutMe p {
+    color: gray;
+}
+
+.services i {
+    background-color: #207561;
+    color: white;
+    padding: 19px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.services .mycard {
+    position: relative;
+    width: 500px;
+}
+
+.services .mycard:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+    transition: all 0.9s ease-out;
+    top: -4px;
+}
+
+/* About me section */
+
+.aboutMe button,
+.contact button {
+    background-color: #207561;
+    color: white;
+    padding: 10px;
+    width: 150px;
+    border: none;
+    border-radius: 30px;
+}
+
+.aboutMe h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 3rem;
+    height: 2px;
+    background: #207561;
+    width: 50px;
+}
+
+/* testimonials section */
+
+.testimonials span {
+    color: #777 !important;
+}
+
+.testimonials h2::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background: white;
+}
+
+/* contact section */
+.contact textarea {
+    height: 200px;
+}
+
+/* footer */
+
+footer span,
+footer a,
+footer i,
+footer p {
+    color: #777 !important;
+}
+
+footer .heart{
+color: #dc3545 !important;
+}
+
+
+/* for JS */
+.go {
+    color: #207561 !important;
+    transition: 0.4s;
+}
+
+.mynav {
+    background-color: white;
+    transition: 0.4s;
+    box-shadow: 0 .25rem .25rem rgba(0, 0, 0, .075) !important;
+}
+
+.mynavv {
+    transition: 0.4s;
+    padding: 5px !important;
+}
+
+
+@media (max-width : 992px) {
+
+    .navbar .nav-item {
+        display: none;
+    }
+
+    .navbar .menu {
+        display: block !important;
+    }
+}
+
+
